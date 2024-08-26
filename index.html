@@ -22,6 +22,7 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- header -->
@@ -31,6 +32,7 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span>
           </a>
+
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -39,6 +41,7 @@
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -53,6 +56,104 @@
             </li>
           </ul>
         </address>
+
+        <!-- button   = -->
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile-menu -->
+
+      <!-- ______________________is-open________________ -->
+      <div class="mobile-menu">
+        <!-- ______________________________________________ -->
+
+        <div class="container mobile-menu-container">
+          <!-- buttonX -->
+          <button class="mobile-menu-clouse" type="button">
+            <svg class="mobile-menu-clous-item" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <!-- name -->
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a
+                  class="mobile-menu-link mobile-menu-current"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href=""> Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- adress -->
+
+          <address class="mobile-adr">
+            <ul class="mobile-adr-list">
+              <li class="mobile-adr-item">
+                <a
+                  class="mobile-adr-link mobile-adr-link-color"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="mobile-adr-item">
+                <a class="mobile-adr-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- socials -->
+          <div class="mobile-socialsm">
+            <ul class="footer-ul">
+              <li class="footer-li">
+                <a class="footer-a" href="#">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-li">
+                <a class="footer-a" href="#">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-li">
+                <a class="footer-a" href="#">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-li">
+                <a class="footer-a" href="#">
+                  <svg class="footer-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- mobile-menu   end -->
       </div>
     </header>
     <main>
@@ -134,6 +235,7 @@
           <ul class="section-two-list">
             <li class="section-two-item">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="foto Mark Guerrero"
                 width="264"
@@ -181,6 +283,7 @@
 
             <li class="section-two-item">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="foto Tom Ford"
                 width="264"
@@ -228,6 +331,7 @@
 
             <li class="section-two-item">
               <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="foto Camila Garcia"
                 width="264"
@@ -275,6 +379,7 @@
 
             <li class="section-two-item">
               <img
+                srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="foto Daniel Wilso"
                 width="264"
@@ -323,19 +428,44 @@
         </div>
       </section>
 
-      <!-- section 3        dz4-->
+      <!-- section 3        dz4 -->
       <section class="page-section-three">
         <div class="container">
           <h2 class="section-three-name">Our Portfolio</h2>
           <ul class="section-three-list">
             <li class="section-three-item">
               <div class="cover-thumb">
-                <img
-                  src="./images/card1.jpg"
-                  alt="Cashless Paymen"
-                  width="360"
-                  height="300"
-                />
+
+
+
+
+                <!-- picture 1 -->
+                <picture>
+                  <source
+                    srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x"
+                    media="(min-weight: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card1-tab.jpg    1x,
+                      ./images/card1-tab@2x.jpg 2x
+                    "
+                    media="(min-weight: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card1-mob.jpg    1x,
+                      ./images/card1-mob@2x.jpg 2x
+                    "
+                    media="(min-weight: 320px)"
+                  />
+                  <img
+                    src="./images/card1.jpg"
+                    alt="Cashless Paymen" />
+                    <!--width="360"
+                    height="300" -->
+                </picture>
+                <!-- picture end -->
 
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -349,16 +479,45 @@
                 <p class="section-three-text">App</p>
               </div>
             </li>
-            <!--  -->
+
             <li class="section-three-item">
-              <!--  -->
               <div class="cover-thumb">
-                <img
+                <!-- picture 2 -->
+                <picture>
+                  <source
+                    srcset="./images/card2.jpg 1x, ./images/card2@2x.jpg 2x"
+                    media="(min-weight: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card2-tab.jpg    1x,
+                      ./images/card2-tab@2x.jpg 2x
+                    "
+                    media="(min-weight: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card2-mob.jpg    1x,
+                      ./images/card2-mob@2x.jpg 2x
+                    "
+                    media="(min-weight: 320px)"
+                  />
+                  <img
+                    src="./images/card2.jpg"
+                    alt="Cashless Paymen" />
+                    <!-- width="360" -->
+                 
+                  <!-- height="300" -->
+                </picture>
+                <!-- picture end -->
+
+                <!-- <img
                   src="./images/card2.jpg"
                   alt="Cashless Paymen"
                   width="360"
                   height="300"
-                />
+                /> -->
+               
 
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -375,12 +534,38 @@
 
             <li class="section-three-item">
               <div class="cover-thumb">
-                <img
+                <!-- picture 3 -->
+                <picture>
+                  <source
+                    srcset="./images/card3.jpg 1x, ./images/card3@2x.jpg 2x"
+                    media="(min-weight: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card3-tab.jpg    1x,
+                      ./images/card3-tab@2x.jpg 2x
+                    "
+                    media="(min-weight: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card3-mob.jpg    1x,
+                      ./images/card3-mob@2x.jpg 2x
+                    "
+                    media="(min-weight: 320px)"
+                  />
+                  <img src="./images/card3.jpg" alt="Cashless Paymen" />
+                  <!-- width="360" -->
+
+                  <!-- height="300" -->
+                </picture>
+                <!-- picture end -->
+                <!-- <img
                   src="./images/card3.jpg"
                   alt="Cashless Paymen"
                   width="360"
                   height="300"
-                />
+                /> -->
 
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -397,12 +582,38 @@
 
             <li class="section-three-item">
               <div class="cover-thumb">
-                <img
+                <!-- picture 4 -->
+                <picture>
+                  <source
+                    srcset="./images/card4.jpg 1x, ./images/card4@2x.jpg 2x"
+                    media="(min-weight: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card4-tab.jpg    1x,
+                      ./images/card4-tab@2x.jpg 2x
+                    "
+                    media="(min-weight: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card4-mob.jpg    1x,
+                      ./images/card4-mob@2x.jpg 2x
+                    "
+                    media="(min-weight: 320px)"
+                  />
+                  <img src="./images/card4.jpg" alt="Cashless Paymen" />
+                  <!-- width="360" -->
+
+                  <!-- height="300" -->
+                </picture>
+                <!-- picture end -->
+                <!-- <img
                   src="./images/card4.jpg"
                   alt="Cashless Paymen"
                   width="360"
                   height="300"
-                />
+                /> -->
 
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -419,12 +630,38 @@
 
             <li class="section-three-item">
               <div class="cover-thumb">
-                <img
+                <!-- picture 5 -->
+                <picture>
+                  <source
+                    srcset="./images/card5.jpg 1x, ./images/card5@2x.jpg 2x"
+                    media="(min-weight: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card5-tab.jpg    1x,
+                      ./images/card5-tab@2x.jpg 2x
+                    "
+                    media="(min-weight: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/card5-mob.jpg    1x,
+                      ./images/card5-mob@2x.jpg 2x
+                    "
+                    media="(min-weight: 320px)"
+                  />
+                  <img src="./images/card5.jpg" alt="Cashless Paymen" />
+                  <!-- width="360" -->
+
+                  <!-- height="300" -->
+                </picture>
+                <!-- picture end -->
+                <!-- <img
                   src="./images/card5.jpg"
                   alt="Cashless Paymen"
                   width="360"
                   height="300"
-                />
+                /> -->
 
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -441,12 +678,41 @@
 
             <li class="section-three-item">
               <div class="cover-thumb">
-                <img
+                
+
+
+                   <!-- picture 6 -->
+                   <picture>
+                    <source
+                      srcset="./images/card6.jpg 1x, ./images/card6@2x.jpg 2x"
+                      media="(min-weight: 1158px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card6-tab.jpg    1x,
+                        ./images/card6-tab@2x.jpg 2x
+                      "
+                      media="(min-weight: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card6-mob.jpg    1x,
+                        ./images/card6-mob@2x.jpg 2x
+                      "
+                      media="(min-weight: 320px)"
+                    />
+                    <img src="./images/card6.jpg" alt="Cashless Paymen" />
+                    <!-- width="360" -->
+  
+                    <!-- height="300" -->
+                  </picture>
+                  <!-- picture end -->
+                <!-- <img
                   src="./images/card6.jpg"
                   alt="Cashless Paymen"
                   width="360"
                   height="300"
-                />
+                /> -->
 
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -480,7 +746,7 @@
         </div>
 
         <div class="social-container">
-          <p class="social-text">Social media</p>
+          <p class="social-text st">Social media</p>
 
           <ul class="footer-ul">
             <li class="footer-li">
@@ -517,19 +783,25 @@
           </ul>
         </div>
 
-<!-- footer-modal -->
+        <!-- footer-modal -->
         <div class="footer-modal-cont">
           <p class="footer-modal-text">Subscribe</p>
-<form class="footer-modal-form">
-  <label class="footer-modal-label">
-    <input  class="footer-modal-input" name="footer-input" type="email" placeholder="E-mail">
-  </label>
-  <button class="footer-modal-bt"  type="submit">Subscribe
-<svg class="footer-modal-bt-svg"  width="24" height="24">
-  <use href="./images/icons.svg#icon-Frame-3"></use>
-</svg>
-  </button>
-</form>
+          <form class="footer-modal-form">
+            <label class="footer-modal-label">
+              <input
+                class="footer-modal-input"
+                name="footer-input"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-modal-bt" type="submit">
+              Subscribe
+              <svg class="footer-modal-bt-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </form>
         </div>
         <!-- end-footer-modal  -->
       </div>
@@ -537,11 +809,11 @@
 
     <!-- modal -->
 
+    <!-- ______________________is-open________________ -->
+    <div class="backdrop">
+      <!-- ______________________________________________ -->
 
-    <div class="backdrop is-open">
       <div class="modal">
-
-
         <button type="button" class="modal-clouse-bt">
           <svg class="clous-item" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
@@ -554,7 +826,13 @@
           <div class="form-wraper-cont">
             <label class="modal-form-label" for="user-name"> Name </label>
             <div class="modal-cont-input">
-              <input class="modal-input" id="user-name" name="user-name" type="text" required />
+              <input
+                class="modal-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
@@ -566,7 +844,13 @@
           <div class="form-wraper-cont">
             <label class="modal-form-label" for="user-phone"> Phone </label>
             <div class="modal-cont-input">
-              <input class="modal-input" id="user-phone" name="user-phone" type="tel" required />
+              <input
+                class="modal-input"
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+                required
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Vector-1"></use>
               </svg>
@@ -612,26 +896,27 @@
               id="user-privacy"
               name="user-privacy"
               value="true"
-                         />
+            />
             <label for="user-privacy" class="custom-label">
               <span class="cuastom-checkbox">
                 <svg class="" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector-3"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="user-privacy" href="#">Privacy Policy</a>
+
+              <span>
+                I accept the terms and conditions of the
+                <a class="user-privacy" href="#">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <!-- checkbox -->
 
-<!-- button -->
-<button class="modal-button" type="submit">Send</button>
-
-
-
+          <!-- button -->
+          <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+    -->
   </body>
 </html>
