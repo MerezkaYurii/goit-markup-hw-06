@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-06</title>
 
     <link
       rel="stylesheet"
@@ -58,7 +58,7 @@
         </address>
 
         <!-- button   = -->
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" data-menu-open type="button">
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
@@ -68,12 +68,12 @@
       <!-- mobile-menu -->
 
       <!-- ______________________is-open________________ -->
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <!-- ______________________________________________ -->
 
         <div class="container mobile-menu-container">
           <!-- buttonX -->
-          <button class="mobile-menu-clouse" type="button">
+          <button class="mobile-menu-clouse" data-menu-close type="button">
             <svg class="mobile-menu-clous-item" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
             </svg>
@@ -161,7 +161,7 @@
       <section class="page-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button button" type="button">
+          <button data-modal-open class="hero-button button" type="button">
             Order Service
           </button>
         </div>
@@ -810,11 +810,11 @@
     <!-- modal -->
 
     <!-- ______________________is-open________________ -->
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <!-- ______________________________________________ -->
 
       <div class="modal">
-        <button type="button" class="modal-clouse-bt">
+        <button type="button" data-modal-close class="modal-clouse-bt">
           <svg class="clous-item" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -917,6 +917,11 @@
         </form>
       </div>
     </div>
-    -->
+
+
+
+    <!-- ---------js------- -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
